@@ -196,6 +196,9 @@ until [[ "$username" =~ ^[a-z0-9]*$ ]]; do
   read -p "Username: " username
 done
 
+read -p "IP ADD QWE: " ip_start
+echo ${#ip_start}
+
 echo "username: \"${username}\"" >> $HOME/ansible-easy-vpn/custom.yml
 
 echo
